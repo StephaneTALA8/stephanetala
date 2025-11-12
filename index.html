@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephane TALA - Livres</title>
+    <!-- Bootstrap CSS pour un design responsive -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Snipcart CSS -->
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+    <!-- Votre CSS personnalisé -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Mon E-Commerce : Boutique de Livres</h1>
+        <nav>
+            <a href="#" class="text-white mx-3">Accueil</a>
+            <a href="#" class="text-white mx-3">À propos</a>
+            <!-- Bouton panier Snipcart -->
+            <button class="snipcart-checkout btn btn-light">
+                Panier (<span class="snipcart-items-count">0</span>)
+            </button>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Nos Produits</h2>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Livre+1" class="card-img-top" alt="Livre 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Livre Exemple 1</h5>
+                        <p class="card-text">Un super livre sur l'aventure. Prix : 15€</p>
+                        <button class="btn btn-primary snipcart-add-item"
+                            data-item-id="livre1"
+                            data-item-price="15.00"
+                            data-item-url="/"
+                            data-item-name="Livre Exemple 1"
+                            data-item-description="Un livre passionnant"
+                            data-item-image="https://via.placeholder.com/300x200?text=Livre+1">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Livre+2" class="card-img-top" alt="Livre 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Livre Exemple 2</h5>
+                        <p class="card-text">Un roman policier. Prix : 12€</p>
+                        <button class="btn btn-primary snipcart-add-item"
+                            data-item-id="livre2"
+                            data-item-price="12.00"
+                            data-item-url="/"
+                            data-item-name="Livre Exemple 2"
+                            data-item-description="Un thriller captivant"
+                            data-item-image="https://via.placeholder.com/300x200?text=Livre+2">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Livre+3" class="card-img-top" alt="Livre 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Livre Exemple 3</h5>
+                        <p class="card-text">Un guide de développement. Prix : 20€</p>
+                        <button class="btn btn-primary snipcart-add-item"
+                            data-item-id="livre3"
+                            data-item-price="20.00"
+                            data-item-url="/"
+                            data-item-name="Livre Exemple 3"
+                            data-item-description="Apprenez à coder"
+                            data-item-image="https://via.placeholder.com/300x200?text=Livre+3">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Livre+4" class="card-img-top" alt="Livre 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Livre Exemple 4</h5>
+                        <p class="card-text">Une biographie inspirante. Prix : 18€</p>
+                        <button class="btn btn-primary snipcart-add-item"
+                            data-item-id="livre4"
+                            data-item-price="18.00"
+                            data-item-url="/"
+                            data-item-name="Livre Exemple 4"
+                            data-item-description="Histoire d'un succès"
+                            data-item-image="https://via.placeholder.com/300x200?text=Livre+4">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Stephane TALA. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Snipcart Script -->
+    <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="M2NhNmU0ZTYtYmYwZC00ZmEwLTg4MDItZjU1NTY1ODBiMjE2NjM4OTg1MDA5NjMwMTQyNDMx" data-config-modal-style="side"></div>
+
+    <!-- Votre JS personnalisé -->
+    <script src="script.js"></script>
+</body>
+</html>
